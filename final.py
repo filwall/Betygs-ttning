@@ -5,7 +5,7 @@ def slut(nyckel,nycklar_du_behöver,karaktär,hjälpta):
     långsam.txt("Efter mycket slit och möda befan sig en stor port lite vid sidan av stigen\n")
     långsam.txt(f'Det fanns {nycklar_du_behöver} nyckelhål längst med dörrkarmen\n')
     print()
-    if nyckel <= nycklar_du_behöver:
+    if nyckel < nycklar_du_behöver:
         print(f'Du har tyvärr bara {nyckel} få nyckar. Vad som finns bakom förblir ett mysterium!\n')
     else:
         långsam.txt("Efter du vridit om alla nyckar börjar portarna öppna sig och du ser en by bakom springan mellan de gigantiska portarna\n")

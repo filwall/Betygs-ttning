@@ -55,7 +55,7 @@ def huvudspel():
         if 1 <= karaktär <= 4:
             break
         else:
-            print("Du har inte valt en giltlig karakär försökt igen")
+            print("Du har inte valt en giltlig karakär försökt igen\n")
 
 
 
@@ -122,7 +122,7 @@ def huvudspel():
         svar = jaellernej.svar()
 
         if svar == "nej":
-            långsam.txt("Du gick vidare och struntade helt i kistan")
+            långsam.txt("Du gick vidare och struntade helt i kistan\n")
         else:
             ryggsäckens_senaste = kista.slump()
             ryggsäck.append(ryggsäckens_senaste)
@@ -163,15 +163,15 @@ def huvudspel():
         
     final.slut(nycklar,poäng_du_behöver,karaktär,hjälpta)
 
+    långsam.txt("Tack för att du spelade\n")
+    långsam.txt("Vill du spela igen\n")
+    spela_igen = jaellernej.svar()
+
+    if spela_igen == "ja":
+        huvudspel()
+    else:
+    print()
 # Här startas spelet
 
 huvudspel()
 print()
-långsam.txt("Tack för att du spelade\n")
-långsam.txt("Vill du spela igen\n")
-spela_igen = jaellernej.svar()
-
-if spela_igen == "ja":
-    huvudspel()
-else:
-    print()
